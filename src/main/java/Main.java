@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        int liczba1, liczba2, wynikObu = 0;
+        int liczba1, liczba2, wynikObu;
         Licz licz = new Licz();
         System.out.println("podaj liczbę");
         Scanner wczytywanie = new Scanner(System.in);

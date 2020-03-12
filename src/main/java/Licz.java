@@ -9,4 +9,11 @@ public class Licz {
         return wynik;
     }
 
+    public int kwadratLiczby(int pierwsza) {
+        this.pierwsza = pierwsza;
+        this.wynik = wynik;
+        wynik = pierwsza * pierwsza;
+        return wynik;
+    }
+
 }
