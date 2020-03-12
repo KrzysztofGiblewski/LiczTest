@@ -13,6 +13,9 @@ public class Main {
         System.out.println("podałeś " + liczba2);
         wynikObu = licz.sumuj(liczba1, liczba2);
         System.out.println("suma liczb " + liczba1 + " i liczby " + liczba2 + " to " + wynikObu);
+        int wynikKwadratu = licz.kwadratLiczby(liczba1);
+        System.out.println(" kwadrat lioczby pierwszej podanej przez ciebie to " + wynikKwadratu);
+        System.out.println("a kwadrat drugiej to " + licz.kwadratLiczby(liczba2));
 
     }
 }
