@@ -16,6 +16,7 @@ public class Main {
         int wynikKwadratu = licz.kwadratLiczby(liczba1);
         System.out.println(" kwadrat lioczby pierwszej podanej przez ciebie to " + wynikKwadratu);
         System.out.println("a kwadrat drugiej to " + licz.kwadratLiczby(liczba2));
+        System.out.println("kwadrat wyniku wynosi " + licz.kwadratLiczby(wynikObu));
 
     }
 }
