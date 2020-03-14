@@ -3,11 +3,12 @@ import org.junit.Test;
 
 public class LiczTest {
     Licz licz = new Licz();
+    int x = 10;
+    int y = 5;
 
     @Test
     public void liczTest() {
-        int x = 10;
-        int y = 5;
+
         int wynikOczekiwany = 15;
         int wynik = licz.sumuj(x, y);
         Assertions.assertThat(wynikOczekiwany).isEqualTo(wynik);
@@ -17,12 +18,21 @@ public class LiczTest {
 
     @Test
     public void kwadratTest() {
-        int xx = 5;
         int wynikKwadratu = 25;
-        int wynikK = licz.kwadratLiczby(xx);
+        int wynikK = licz.kwadratLiczby(x);
         Assertions.assertThat(wynikKwadratu).isEqualTo(wynikK);
         System.out.println("test sprawdził " + wynikKwadratu + " = " + wynikK);
 
     }
+
+    @Test
+    public void liczTestFail() {
+        //test na nie prawde bo wynik 10+5 nie rowna sie 16
+        int wynikFail = 16;
+
+        Assertions.assertThat(licz.sumuj(x, y)).isNotEqualTo(wynikFail);
+
+    }
+
 
 }
