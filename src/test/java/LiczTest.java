@@ -19,11 +19,18 @@ public class LiczTest {
     @Test
     public void kwadratTest() {
         int wynikKwadratu = 25;
-        int wynikK = licz.kwadratLiczby(x);
+        int wynikK = licz.kwadratLiczby(y);
         Assertions.assertThat(wynikKwadratu).isEqualTo(wynikK);
         System.out.println("test sprawdził " + wynikKwadratu + " = " + wynikK);
 
     }
+
+    @Test
+    public void kwadratTestFail() {
+        int wynikBledny = 26;
+        Assertions.assertThat(licz.kwadratLiczby(y)).isNotEqualTo(wynikBledny);
+    }
+
 
     @Test
     public void liczTestFail() {
