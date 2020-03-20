@@ -2,15 +2,16 @@ import org.assertj.core.api.Assertions;
 import org.junit.Test;
 
 public class LiczTest {
-    Licz licz = new Licz();
-    int x = 10;
+
     int y = 5;
+    int x = 10;
+    Licz licz = new Licz();
 
     @Test
     public void liczTest() {
 
-        int wynikOczekiwany = 15;
-        int wynik = licz.sumuj(x, y);
+        long wynikOczekiwany = 15;
+        long wynik = licz.sumuj(x, y);
         Assertions.assertThat(wynikOczekiwany).isEqualTo(wynik);
         System.out.println("test na sumę sprawdzał " + wynikOczekiwany + " = " + wynik);
 
@@ -18,8 +19,8 @@ public class LiczTest {
 
     @Test
     public void kwadratTest() {
-        int wynikKwadratu = 25;
-        int wynikK = licz.kwadratLiczby(y);
+        long wynikKwadratu = 25;
+        long wynikK = licz.kwadratLiczby(y);
         Assertions.assertThat(wynikKwadratu).isEqualTo(wynikK);
         System.out.println("test sprawdził " + wynikKwadratu + " = " + wynikK);
 
@@ -35,7 +36,7 @@ public class LiczTest {
     @Test
     public void liczTestFail() {
         //test na nie prawde bo wynik 10+5 nie rowna sie 16
-        int wynikFail = 16;
+        long wynikFail = 16;
 
         Assertions.assertThat(licz.sumuj(x, y)).isNotEqualTo(wynikFail);
 

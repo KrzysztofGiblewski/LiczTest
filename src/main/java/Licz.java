@@ -1,7 +1,7 @@
 public class Licz {
-    int pierwsza, druga, wynik;
+    long pierwsza, druga, wynik;
 
-    public int sumuj(int pierwsza, int druga) {
+    public long sumuj(long pierwsza, long druga) {
         this.pierwsza = pierwsza;
         this.druga = druga;
         this.wynik = wynik;
@@ -9,7 +9,7 @@ public class Licz {
         return wynik;
     }
 
-    public int kwadratLiczby(int pierwsza) {
+    public long kwadratLiczby(long pierwsza) {
         this.pierwsza = pierwsza;
         this.wynik = wynik;
         wynik = pierwsza * pierwsza;
